@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		@media only screen and (min-width: 769px){
+    .c1m{width: 8.33%;float: left;}
+    .c2m{width: 16.66%;float: left;}
+    .c3m{width: 25%;float: left;}
+    .c4m{width: 33.33%;float: left;}
+    .c6m{width: 50%;float: left;}
+}
+
+/*width大于768px时*/
+       @media only screen and (max-width: 768px){
+    .c1{width: 8.33%;float: left;}
+    .c2{width: 16.66%;float: left;}
+    .c3{width: 25%;float: left;}
+    .c6{width: 50%;float: left;}
+    .c8{width: 66.66%;float: left;}
+    .c12{width: 100%;float: left;}
+}
+		.box{
+			background-color: #eee;
+			height: 48px;
+			border: #999 1px solid;
+            margin: 10px;
+		}
+	</style>
+</head>
+<body>
+    <div id="Frame" style="margin: 0px;">
+     <div class="c4m c6"><div class="box"></div></div>
+     <div class="c4m c6"><div class="box"></div></div>
+     <div class="c4m c12"><div class="box"></div></div>
+     <div class="c3m c3"><div class="box"></div></div>
+     <div class="c6m c6"><div class="box"></div></div>
+     <div class="c3m c3"><div class="box"></div></div>
+     <div class="c1m c2"><div class="box"></div></div>
+     <div class="c1m c2"><div class="box"></div></div>
+     <div class="c2m c8"><div class="box"></div></div>
+     <div class="c2m c3"><div class="box"></div></div>
+     <div class="c6m c3"><div class="box"></div></div>
+     </div>
+</body>
+</html>
