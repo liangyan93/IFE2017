@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	    body{
+	    	margin: 0px;
+	    }
+		.head{
+			background-color: #1e90ff;height: 50px;padding-top: 10px;width: 100%;
+		}
+		.pic{
+			background-color: #fff;width: 40px;height: 40px;
+			margin-left: 40px;
+		}
+		.picc{
+            width: 16px;height: 16px;border-left: 4px solid #1e90ff;
+            border-top: 4px solid #1e90ff; position: relative; top: 20px;left: 20px;
+		}
+		.search{
+			width: 20%;height: 40px;border-radius: 10px 10px;background-color: #fff;
+			float: right;margin-top: -40px; margin-right: 15%;
+		}
+		.left{
+			width: 25%;
+			height: 1200px;
+			background-color: #3c3c57;
+			color: #708090;
+			float: left;
+		}
+
+		p{margin: 0px;}
+		ul li{list-style-type: none; font-size: 14px;padding-top: 20px;font-weight: bold;padding-left: 40px;height: 100px;}
+		ul li:hover{
+			background-color: #c0c0c0;height: 210px;
+		}
+		ul li ul li{display: none;}
+		ul li:hover ul li{display: block;padding-top: 0px;height:60px;}
+		ul li:hover ul li ul li{display: none;}
+		ul li:hover ul li:hover ul li{display: block; padding: 0px;height: 20px;}
+		ul li:hover p{transform:rotate(90deg);}
+		.right{
+            width: 75%;
+            float: left;
+            height: 1200px;
+            background-color: #efefef;
+            color: #dcdcdc;
+		}
+		.first{
+			width: 90%;background-color: #fff;margin-left: 5%;margin-right: 5%;margin-top: 20px;height: 150px;
+		}
+		select{margin-left: 5%;}
+		.span1{ background-color: #dcdcdc;color: #fff; float: left;width: 15%;margin-left: 1%;height: 20px;border-radius: 2px 2px 0 0;}
+		.span1:hover{background-color: #fff;color: #000;border: 1px solid #dcdcdc;border-bottom: 0px;}
+		table{width: 80%;margin-left: 5%; margin-top: 20px;}
+        tr td{border:1px solid #dcdcdc;margin: 0px;}
+        tr:hover{background-color: #dcdcdc;color: #fff;}
+	</style>
+</head>
+<body>
+	<div><!-- 整个页面 -->
+		<div class="head"><!-- 页面头部搜索栏 -->
+			<div class="pic"><!-- 左上图标 -->
+				<div class="picc"> </div>
+			</div>
+			<div class="search"><!-- 搜索栏 -->
+				<div><img style="width: 20px;height: 40px; margin-left: 10px;" src="http://58pic.ooopic.com/58pic/14/64/63/96u58PICfAj.jpg"> </div><!-- 搜索图片 -->
+				<input style="width: 85%;height: 36px;border: 0px;position: relative;bottom: 42px;left: 10%;" type="text" name="search">
+			</div>
+			<div style="float: right;margin-top: -40px;margin-right: 5%;"><!-- 登陆 -->
+				<img style="width: 30px;height:40px; " src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491903107200&di=63fc8b8051808f07135ab77b808540cc&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-12%2F053136460.jpg">
+				<a style="color: #fff;position: relative;bottom: 10px;">登录</a>
+			</div>
+		</div>
+		<div class="left"><!-- 左侧深色导航栏 -->
+		    <div style="height: 100px;margin-left: 20%;padding-top:20px;">
+			    <div style="width: 40%;height: 100px;float: left;"><div style="width: 65px;height: 65px;border-radius: 65px;border: 1px solid #c0c0c0;background-color:#3c3c57;"><div style="width: 55px;height: 55px;border-radius: 55px;background-color: #c0c0c0;position: relative;top: 5px;left: 5px;"></div></div></div>
+			    <p style="color: #fff;width: 30%;float: left;">ABC123</p>
+			</div>
+			<div style="overflow: hidden;">
+				<div style="width: 48%;float: left;text-align: center;"><p>110</p><p>收藏</p></div><!-- 收藏 -->
+				<div style="width: 48%;float: left;text-align: center;border-left: 2px solid #708090;"><p>313</p><p>粉丝</p></div><!-- 粉丝 -->
+			</div>
+			<div>
+			    <ul style="padding-left: 0px;">
+			    <li>
+			       <a><img id="p1" style="width: 20px;height: 20px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911706385&di=b8dd26031c1b7dac642fe5f0309ea029&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F74%2F60%2F11H58PIC4S7_1024.jpg"> 个人报表</a>
+			       <ul>
+			       <p style="width: 30px;height: 30px;"><img style="width: 30px;height: 30px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491918310598&di=472e84fcf20fa4504dbf38c7f4fc9be1&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F74%2F73%2F37r58PICk87_1024.jpg"></p>
+			       	<li><img style="width: 15px;height: 15px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911706385&di=b8dd26031c1b7dac642fe5f0309ea029&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F74%2F60%2F11H58PIC4S7_1024.jpg"> 文件1
+                        <ul>
+                        	<li><img style="width: 10px;height: 10px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491912181452&di=9477414b30fd03ae475bea8c0bf98971&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F23%2F99%2F18k58PICyaH_1024.jpg">文档1</li>
+                        	<li><img style="width: 10px;height: 10px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491912181452&di=9477414b30fd03ae475bea8c0bf98971&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F23%2F99%2F18k58PICyaH_1024.jpg">文档2</li>
+                        </ul>
+			        </li>
+			       	<li><img style="width: 15px;height: 15px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911706385&di=b8dd26031c1b7dac642fe5f0309ea029&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F74%2F60%2F11H58PIC4S7_1024.jpg"> 文件2</li>
+			       	<li><img style="width: 15px;height: 15px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911706385&di=b8dd26031c1b7dac642fe5f0309ea029&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F74%2F60%2F11H58PIC4S7_1024.jpg"> 文件3</li>
+			       </ul>
+			    </li>
+                <li><a><img style="width: 20px;height: 20px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911872108&di=f4aeee7f85f24e45a125148952b51be6&imgtype=0&src=http%3A%2F%2Fimg.web07.cn%2FUpImg%2FPng%2F201302%2F08%2Fpng306845080432351.png"> 个人收藏</a></li>
+                <li><a><img style="width: 20px;height: 20px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911706385&di=b8dd26031c1b7dac642fe5f0309ea029&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F74%2F60%2F11H58PIC4S7_1024.jpg"> 我的分享</a></li>
+                <li><a><img style="width: 20px;height: 20px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911872108&di=f4aeee7f85f24e45a125148952b51be6&imgtype=0&src=http%3A%2F%2Fimg.web07.cn%2FUpImg%2FPng%2F201302%2F08%2Fpng306845080432351.png"> 图库</a></li>
+                <li><a><img style="width: 20px;height: 20px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911872108&di=f4aeee7f85f24e45a125148952b51be6&imgtype=0&src=http%3A%2F%2Fimg.web07.cn%2FUpImg%2FPng%2F201302%2F08%2Fpng306845080432351.png"> 成长记录</a></li>
+                <li><a><img style="width: 20px;height: 20px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491911706385&di=b8dd26031c1b7dac642fe5f0309ea029&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F74%2F60%2F11H58PIC4S7_1024.jpg"> 账户信息</a></li>
+                </ul>
+            </div>
+		</div>
+		<div class="right"><!-- 右侧整体页面 -->
+			<div style="height: 30px;background-color: #fff;"><!-- 白块块 --><p style="margin-left: 60px;padding-top: 5px;">c站/报表/文件</p></div>
+			<div class="first"><!-- 一堆下拉那块 -->
+			    <div style="width: 15%;float: left;margin-top: 30px;margin-left: 5%;">
+				<p>查询项<select><option>第一项</option><option>第二项</option></select></p>
+				</div>
+				<div style="width: 25%;float: left;margin-top: 30px;">
+				<p>买方<select style="width: 75%"><option>小A</option><option>小B</option><option>小C</option></select></p>
+				<p style="margin-top: 30px;">卖方<select style="width: 75%"><option>小A</option><option>小B</option><option>小C</option></select></p>
+				</div>
+				<div style="width: 35%;float: left;margin-top: 30px;">
+				 <p >
+                 <span>日期<select style="width: 35%"></select></span>
+                 <span>总耗时<select style="width: 25%"><option>1天</option><option>2天</option><option>3天</option></select></span></p>
+                 <p style="margin-top: 30px;">
+                 <span>人数<select style="width: 30%"><option>1人</option><option>2人</option><option>3人</option></select></span>
+                 <span>成交项<select style="width: 30%"><option>1个</option><option>2个</option><option>3个</option></select></span></p>
+                 </div>
+                 <input style="margin-top: 30px;background-color: #00bbff;" type="button" name="search" value="搜索">
+			</div>
+			<div style="margin-left: 5%;margin-top: 20px;overflow: hidden;"><!-- 左右键那块 -->
+				<input style="background-color: #fff;width: 3%;height: 100px;color: #708090;border: 0px;float: left;" type="button" name="leftbutton" value="<" >
+				<div style="float: left;margin-left: 2%;background-color: #fff;width: 10%;height: 100px;"><p style="text-align: center;margin-top: 20px;color: #000;">10:00pm</p><p style="text-align: center;margin-top: 15px;"><span>￥</span><span style="color: #ff4500;">1200</span></p></div>
+				<div style="float: left;margin-left: 2%;background-color: #fff;width: 10%;height: 100px;"><p style="text-align: center;margin-top: 20px;color: #000;">11:00pm</p><p style="text-align: center;margin-top: 15px;"><span>￥</span><span style="color: #ff4500;">1300</span></p></div>
+				<div style="float: left;margin-left: 2%;background-color: #fff;width: 10%;height: 100px;"><p style="text-align: center;margin-top: 20px;color: #000;">12:00pm</p><p style="text-align: center;margin-top: 15px;"><span>￥</span><span style="color: #ff4500;">1200</span></p></div>
+				<div style="float: left;margin-left: 2%;background-color: #fff;width: 10%;height: 100px;"><p style="text-align: center;margin-top: 20px;color: #000;">01:00pm</p><p style="text-align: center;margin-top: 15px;"><span>￥</span><span style="color: #ff4500;">1400</span></p></div>
+				<div style="float: left;margin-left: 2%;background-color: #fff;width: 10%;height: 100px;"><p style="text-align: center;margin-top: 20px;color: #000;">02:00pm</p><p style="text-align: center;margin-top: 15px;"><span>￥</span><span style="color: #ff4500;">1500</span></p></div>
+				<div style="float: left;margin-left: 2%;background-color: #fff;width: 10%;height: 100px;"><p style="text-align: center;margin-top: 20px;color: #000;">103:00pm</p><p style="text-align: center;margin-top: 15px;"><span>￥</span><span style="color: #ff4500;">1800</span></p></div>
+				<input style="background-color: #fff;width: 3%;height: 100px;color: #708090;border: 0px;float: left;margin-left: 2%" type="button" name="leftbutton" value=">" >
+				<div style="width: 13%;height: 100px;background-color: #fff;margin-left: 2%;float: left;"><img style="width: 30%;height: 50px;margin-top: 20px;margin-left: 10%;float: left;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491981742235&di=cd5eb1de859fc1b6db5a7f72cd377e72&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F75%2F04%2F30u58PICcm6_1024.jpg"><p style="float: left;margin-top: 40px;color: #00bfff;">历史查询</p></div>
+			</div>
+			<p style="margin-left: 5%;color: #000;margin-top: 20px;">2016年4月统计</p>
+			<div style="margin-left: 5%;"><!-- 统计 -->
+				<div style="float: left; width: 21%;background-color: #fff;height: 120px;border-left: 5px solid #3cb371;"><!-- 绿 --><p style="color: #000;">1313131</p><p>成交量</p><p style="width: 40%;background-color: #3cb371;height: 80px; float: right;margin-right: 10%;margin-top: -15px;"></p></div>
+				<div style="float: left; width: 21%;background-color: #fff;height: 120px;border-left: 5px solid #1e90ff;margin-left: 3%;"><!-- 蓝 --><p style="color: #000;">1313131</p><p>成交量</p><p style="width: 40%;background-color: #1e90ff;height: 80px; float: right;margin-right: 10%;margin-top: -15px;"></p></div>
+				<div style="float: left; width: 21%;background-color: #fff;height: 120px;border-left: 5px solid #f08080;margin-left: 3%;"><!-- 红 --><p style="color: #000;">1313131</p><p>成交量</p><p style="width: 40%;background-color: #f08080;height: 80px; float: right;margin-right: 10%;margin-top: -15px;"></p></div>
+				<div style="width: 21%;background-color: #fff;height: 120px;border-left: 5px solid #ff8c00;margin-left: 3%;float: left;"><!-- 黄 --><p style="color: #000;">1313131</p><p>成交量</p><p style="width: 40%;background-color: #ff8c00;height: 80px; float: right;margin-right: 10%;margin-top: -15px;"></p></div>
+			</div>
+			<div style="margin-left: 5%;"><!-- 项目 -->
+				<div style="background-color: #fff;width: 60%;float: left;height: 300px;margin-top: 20px;border-radius: 10px 10px 0px 0px;">    <p style="background-color: #dcdcdc;border-radius: 10px 10px 0px 0px;color: #000;height: 30px;padding-top:10px;">第一个项目</p>
+                     <div>
+                     	<p style="margin-top: 20px;margin-left: 8%">	<span class="span1">项目1</span>
+                     		<span class="span1">项目1</span>
+                     		<span class="span1">项目1</span>
+                     		<span class="span1">项目1</span>
+                     		<span class="span1">项目1</span></p>
+                     </div>
+                     <div style="width: 85%;border: 1px solid #dcdcdc;height: 180px;margin-left: 5%;position: relative;top: 20px;">
+                     	<table>
+				    	<tr><td>1</td><td>1</td><td>1</td></tr>
+				    	<tr><td>1</td><td>1</td><td>1</td></tr>
+				    	<tr><td>1</td><td>1</td><td>1</td></tr>
+				    </table>
+                     </div>
+				</div>
+				<div style="background-color: #fff;width: 34%;margin-left: 1%;float: left;height: 300px;margin-top: 20px;border-radius: 10px 10px 0px 0px;">
+				<p style="background-color: #dcdcdc;border-radius: 10px 10px 0px 0px;color: #000;height: 30px;padding-top:10px;">第一个项目</p>
+				<div style="margin-left: 10%;margin-top: 50px;">
+					<p>标题</p>
+					<p>项目报表三</p>
+					<div style="border-top: 1px solid #dcdcdc;border-bottom:1px solid #dcdcdc; width: 40%;float: left;"><p>价格</p><p>￥153</p></div>
+					<div style="border-top: 1px solid #dcdcdc;border-bottom:1px solid #dcdcdc; border-left: 1px solid #dcdcdc;width: 40%;float:left;"><p>负责人</p><p>A</p></div><div style="clear: both;"></div>
+                    <p>详细描述</p>
+                    <p>负责人是</p> 
+                    <div style="margin-top: 20px;border-top: 1px solid #dcdcdc;width: 80%;"><input type="checkbox" name="check1"><span>遵守保密协议</span><input style="background-color: #2020ff;color: #fff;" type="button" name="search2" value="搜索"></div>   
+				</div>
+				</div>
+			</div>
+			<div style="margin-left: 5%;"><!-- 日历 -->
+				<div style="background-color: #fff;width: 34%;float: left;height: 300px;margin-top: 20px;border-radius: 10px 10px 0px 0px;">
+					<p style="background-color: #dcdcdc;border-radius: 10px 10px 0px 0px;color: #000;height: 30px;padding-top:10px;">日历</p>
+					<p>网上大约用js写，仅是界面不实现功能可以写table</p>
+				</div>
+				<div style="background-color: #fff;width: 60%;float: left;height: 300px;margin-top: 20px;border-radius: 10px 10px 0px 0px;margin-left: 1%">
+					<p style="background-color: #dcdcdc;border-radius: 10px 10px 0px 0px;color: #000;height: 30px;padding-top:10px;">汽车品牌</p>
+					<table>
+						<tr><td>排名</td><td>品牌</td><td>搜索指数</td></tr>
+						<tr><td>排名</td><td>品牌</td><td>搜索指数</td></tr>
+						<tr><td>排名</td><td>品牌</td><td>搜索指数</td></tr>
+						<tr><td>排名</td><td>品牌</td><td>搜索指数</td></tr>
+						<tr><td>排名</td><td>品牌</td><td>搜索指数</td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
